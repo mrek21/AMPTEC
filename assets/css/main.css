@@ -2065,6 +2065,12 @@ label {
 	color: #999;
 }
 
+.required {
+    color: red;
+    margin-left: 0.25em;
+}
+
+
 
 /* Image */
 

@@ -37,37 +37,45 @@
     </div>
 
     <!-- Main -->
-    <section class="wrapper style1">
-        <div class="container">
-            <header>
-                <h2>Contact Us</h2>
-                <p>We’d love to hear from you. Please fill out the form below.</p>
-            </header>
+<section class="wrapper style1">
+    <div class="container">
+        <header>
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you. Please fill out the form below.</p>
+        </header>
 
-            <form id="contact-form" action="https://formspree.io/f/manbyzaw" method="POST">
-                <div class="row gtr-50">
-                    <div class="col-12">
-                        <input type="text" name="name" placeholder="Name" required />
-                    </div>
-                    <div class="col-12">
-                        <input type="tel" name="phone" placeholder="Phone" required />
-                    </div>
-                    <div class="col-12">
-                        <input type="email" name="email" placeholder="Email" required />
-                    </div>
-                    <div class="col-12">
-                        <input type="text" name="location" placeholder="Location" />
-                    </div>
-                    <div class="col-12">
-                        <textarea name="message" placeholder="Message" rows="5" required></textarea>
-                    </div>
-                    <div class="col-12">
-                        <ul class="actions">
-                            <li><input type="submit" class="button alt" value="Send Message" /></li>
-                        </ul>
-                    </div>
+        <form id="contact-form" action="https://formspree.io/f/manbyzaw" method="POST">
+            <div class="row gtr-50">
+                <div class="col-12">
+                    <label for="name">Name <span class="required">*</span></label>
+                    <input type="text" name="name" id="name" placeholder="Name" required />
                 </div>
-            </form>
+                <div class="col-12">
+                    <label for="phone">Phone <span class="required">*</span></label>
+                    <input type="tel" name="phone" id="phone" placeholder="Phone" required />
+                </div>
+                <div class="col-12">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" name="email" id="email" placeholder="Email" required />
+                </div>
+                <div class="col-12">
+                    <label for="location">Location</label>
+                    <input type="text" name="location" id="location" placeholder="Location" />
+                </div>
+                <div class="col-12">
+                    <label for="message">Message <span class="required">*</span></label>
+                    <textarea name="message" id="message" placeholder="Message" rows="5" required></textarea>
+                </div>
+                <div class="col-12">
+                    <ul class="actions">
+                        <li><input type="submit" class="button alt" value="Send Message" /></li>
+                    </ul>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
 
             <!-- Confirmation Message -->
             <div id="confirmation-message" style="display:none; margin-top:20px; color:green; font-weight:bold; text-align:center;">
