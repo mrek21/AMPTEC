@@ -124,6 +124,32 @@
 <script src="/assets/js/util.js"></script>
 <script src="/assets/js/main.js"></script>
 
+<!-- Mobile Logo Link Fix -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const titleBarTitle = document.querySelector("#titleBar .title");
+    if (titleBarTitle) {
+        // Remove anything inside
+        titleBarTitle.textContent = "";
+
+        // Create a link
+        const link = document.createElement("a");
+        link.href = "/";
+        link.style.display = "inline-block";
+
+        // Add logo image
+        const img = document.createElement("img");
+        img.src = "/images/logo.jpg"; // Adjust path if necessary
+        img.alt = "AMPTEC Logo";
+        img.style.height = "40px";
+        img.style.verticalAlign = "middle";
+
+        link.appendChild(img);
+        titleBarTitle.appendChild(link);
+    }
+});
+</script>
+
 
 
 </body>
