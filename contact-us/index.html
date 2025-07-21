@@ -141,16 +141,28 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     const titleBarTitle = document.querySelector("#titleBar .title");
-    if (titleBarTitle && !titleBarTitle.querySelector("a")) {
+    if (titleBarTitle) {
+        // Remove anything inside
+        titleBarTitle.textContent = "";
+
+        // Create a link
         const link = document.createElement("a");
         link.href = "/";
-        link.style.color = "#fff";
-        link.textContent = titleBarTitle.textContent.trim();
-        titleBarTitle.textContent = "";
+        link.style.display = "inline-block";
+
+        // Add logo image
+        const img = document.createElement("img");
+        img.src = "/images/logo.jpg"; // Adjust path if necessary
+        img.alt = "AMPTEC Logo";
+        img.style.height = "30px";
+        img.style.verticalAlign = "middle";
+
+        link.appendChild(img);
         titleBarTitle.appendChild(link);
     }
 });
 </script>
+
 
 </body>
 </html>
