@@ -2002,6 +2002,7 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"]
 	textarea {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -2025,13 +2026,15 @@ input, select, textarea {
 		input[type="text"]:focus,
 		input[type="password"]:focus,
 		input[type="email"]:focus,
+		input[type="tel"]:focus
 		textarea:focus {
 			border-color: #007ec6;
 		}
 
 	input[type="text"],
 	input[type="password"],
-	input[type="email"] {
+	input[type="email"],
+	input[type/'tel'] {
 		line-height: 1em;
 	}
 
