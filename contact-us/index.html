@@ -42,29 +42,30 @@
         <header>
             <h2>Contact Us</h2>
             <p>We’d love to hear from you. Please fill out the form below.</p>
+            <p style="font-size: 0.9em; color: red; margin-top: -1em;"><span class="required">*</span>required</p>
         </header>
 
         <form id="contact-form" action="https://formspree.io/f/manbyzaw" method="POST">
             <div class="row gtr-50">
                 <div class="col-12">
                     <label for="name">Name <span class="required">*</span></label>
-                    <input type="text" name="name" id="name" placeholder="Name" required />
+                    <input type="text" name="name" id="name" required />
                 </div>
                 <div class="col-12">
                     <label for="phone">Phone <span class="required">*</span></label>
-                    <input type="tel" name="phone" id="phone" placeholder="Phone" required />
+                    <input type="tel" name="phone" id="phone" required />
                 </div>
                 <div class="col-12">
                     <label for="email">Email <span class="required">*</span></label>
-                    <input type="email" name="email" id="email" placeholder="Email" required />
+                    <input type="email" name="email" id="email" required />
                 </div>
                 <div class="col-12">
                     <label for="location">Location</label>
-                    <input type="text" name="location" id="location" placeholder="Location" />
+                    <input type="text" name="location" id="location" />
                 </div>
                 <div class="col-12">
                     <label for="message">Message <span class="required">*</span></label>
-                    <textarea name="message" id="message" placeholder="Message" rows="5" required></textarea>
+                    <textarea name="message" id="message" rows="5" required></textarea>
                 </div>
                 <div class="col-12">
                     <ul class="actions">
@@ -75,6 +76,7 @@
         </form>
     </div>
 </section>
+
 
 
             <!-- Confirmation Message -->
