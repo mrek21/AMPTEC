@@ -137,6 +137,21 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
 });
 </script>
 
+<!-- Mobile Logo Link Fix -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const titleBarTitle = document.querySelector("#titleBar .title");
+    if (titleBarTitle && !titleBarTitle.querySelector("a")) {
+        const link = document.createElement("a");
+        link.href = "/";
+        link.style.color = "#fff";
+        link.textContent = titleBarTitle.textContent.trim();
+        titleBarTitle.textContent = "";
+        titleBarTitle.appendChild(link);
+    }
+});
+</script>
+
 </body>
 </html>
 
