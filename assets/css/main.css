@@ -2071,7 +2071,6 @@ label {
 }
 
 
-
 /* Image */
 
 	.image {
@@ -2739,7 +2738,7 @@ label {
 		}
 
 		.wrapper.style2 {
-			background-color: #fff;
+			background-color: #f5f5f5;
 			background-image: url("../../images/bg02.png"), url("../../images/bg03.png"), url("../../images/bg01.png");
 			background-position: top left,						bottom left,					top left;
 			background-size: 100% 6em,						100% 6em,						auto;
