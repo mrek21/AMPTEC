@@ -3375,3 +3375,25 @@ label {
         background-image: none;
     }
 }
+
+.contact-call-btn {
+    background-color: #007ec6 !important;
+    color: #fff !important;
+    padding: 0.9em 2em;
+    font-weight: 600;
+    font-size: 1.1em;
+    border-radius: 6px;
+    margin: 1em 0;
+    display: block;      /* <-- Forces it onto its own line */
+    width: fit-content;  /* Keeps the button only as wide as needed */
+}
+
+.small-note {
+    margin-top: 0.5em;
+    font-size: 0.95em;
+}
+
+.required {
+    color: red;
+    font-weight: bold;
+}
